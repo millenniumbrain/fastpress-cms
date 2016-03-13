@@ -13,7 +13,7 @@ require './env'
 class Fastpress < Roda
   plugin :default_headers,
     'Content-Type' => 'text/html',
-    'Content-Security-Policy' => "default-src 'self'",
+    #'Content-Security-Policy' => "default-src 'self'",
     'Strict-Transport-Security' => 'max-age=160704400',
     'X-Frame-Options' => 'deny',
     'X-Content-Type-Options' => 'nosniff',
@@ -21,7 +21,7 @@ class Fastpress < Roda
   plugin :environments
   plugin :multi_route
   plugin :render, :engine => 'slim', :views => 'views'
-  plugin :static, ['/js', '/css']
+  plugin :static, ['/css', '/fonts', '/js']
   plugin :flash
   plugin :h
   plugin :multi_route

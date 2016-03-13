@@ -1,0 +1,54 @@
+.flex-grid {
+  display: flex;
+}
+
+.grid-cell {
+  flex: 1;
+}
+
+// alignment per row
+.grid-align-top {
+  align-items: flex-start;
+}
+
+.grid-align-bottom {
+  align-items: flex-end;
+}
+
+.grid-align-center {
+  align-items: center;
+}
+
+// alignment per cell
+.grid-cell-align-top {
+  align-self: flex-start;
+}
+
+.grid-cell-align-bottom {
+  align-self: flex-end;;
+}
+
+.grid-cell-align-center {
+  align-self: center;
+}
+
+// base for all classes and media selectors
+.grid-fit > .grid-cell {
+  flex: 1;
+}
+
+.grid-full > .grid-cell {
+  flex: 0 0 100%;
+}
+
+.grid-1-2 > .grid-cell {
+  flex: 0 0 50%;
+}
+
+.grid-1-3 > .grid-cell {
+  flex: 0 0 33.3333%;
+}
+
+.grid-1-4 > .grid-cell {
+  flex: 0 0 25%;
+}

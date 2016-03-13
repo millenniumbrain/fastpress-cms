@@ -19,3 +19,7 @@ namespace :sqlite do
   task :delete do
   end
 end
+
+task :tests do
+  system 'bin/rspec --format doc'
+end

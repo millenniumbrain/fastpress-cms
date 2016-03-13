@@ -1,0 +1,34 @@
+.form {
+  width: 100%;
+
+  fieldset {
+    border: none;
+  }
+
+  textarea {
+    font-size: 1.5em;
+  }
+
+  input[type=text] {
+    font-size: 1.5em;
+    padding: 8px 10px;
+  }
+}
+
+.form-control {
+  margin: 10px 0 10px;
+
+  input[type=text] {
+    width: 100%;
+  }
+
+  textarea {
+    padding: 8px 10px;
+    width: 100%;
+    height: 300px;
+  }
+}
+
+.form-controls {
+
+}

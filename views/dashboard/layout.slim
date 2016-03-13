@@ -4,6 +4,34 @@ html lang="en"
     title Dashboard - Home
     meta charset="utf-8"
     meta name="viewport" content="width=device-width, initial-scale=1"
-    link rel="stylesheet" href="css/normalize.css" type="text/css"
+    link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'
+    link rel="stylesheet" href="/css/typicons.css" type="text/css"
+    link rel="stylesheet" href="/css/normalize.css" type="text/css"
+    link rel="stylesheet" href="/css/dashboard.css" type="text/css"
   body
-    ==yield
+    .container
+      nav.nav
+        ul.nav-panel
+          li
+            a title="Home" href="/dashboard"
+              span.typcn.typcn-home
+          li
+            a title="Posts" href="/dashboard/posts"
+              span.typcn.typcn-pen
+          li
+            a title="Media Gallery" href="/dashboard/media"
+              span.typcn.typcn-spanner
+          li
+            a title="Feedback" href="/dasboard/feedback"
+              span.typcn.typcn-mail
+          li
+            a title="Tags" href="/dashboard/tags"
+              span.typcn.typcn-tags
+          li
+            a title="Users" href="/dashboard/users"
+              span.typcn.typcn-user
+          li
+            a title="Setttings" href="/dashboard/settings"
+              span.typcn.typcn-spanner
+      .dashboard
+        ==yield

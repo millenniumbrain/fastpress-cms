@@ -1,0 +1,21 @@
+.dashboard-panel
+  ul.dashboard-controls
+    li
+      a href="#"
+        span.typcn.typcn-book.control-icon
+        span.control-text Posts
+    li
+      a href="#"
+        span.typcn.typcn-pen.control-icon
+        span.control-text New
+.dashboard-container
+  form.form.post-editor action="/posts" method="post"
+    fieldset
+      .form-control
+        input type="text" name="title" placeholder="#Title"
+      .form-control
+        textarea name="body" placeholder="Mark down your thoughts here.."
+      .form-control
+        button.button.primary Save
+        button.button Publish
+      

@@ -1,6 +1,6 @@
 Sequel.migration do
   up do
-    create_table(:permissions_groups) do
+    create_table(:groups_permissions) do
       primary_key :id
       foreign_key :permission_id
       foreign_key :group_id

@@ -1,0 +1,42 @@
+.post-editor {
+  width: 60%;
+  margin: 2em auto;
+  font-family: 'Montserrat', sans-serif;
+  textarea {
+    resize: none;
+    border: none;
+    margin-top: 1em;
+    &::-webkit-input-placeholder {
+      font-style: italic;
+    }
+
+    &::-moz-placeholder {
+      font-style: italic;
+    }
+
+    &::-ms-input-placeholder {
+      font-style: italic;
+    }
+
+    border-radius: 2px;
+    border: 1px solid $cascade;
+
+    &:focus {
+      border: 1px solid $chambray !important;
+    }
+  }
+
+  input[type=text] {
+    border: none;
+    border-bottom: 1px solid $edward;
+    margin: 0.5em 0;
+
+  }
+
+  textarea, input[type=text] {
+    &:focus {
+      outline: none;
+
+    }
+  }
+}
